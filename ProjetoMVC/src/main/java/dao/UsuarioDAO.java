@@ -63,13 +63,15 @@ public class UsuarioDAO{
 			ResultSet r = stmt.executeQuery();
 
 			if (r.next()) {
-				usuario = new Usuario();
-				usuario.setId(r.getInt("id"));
-				usuario.setNome(r.getString("nome"));
-				usuario.setCpf(r.getString("cpf"));
-				usuario.setEmail(r.getString("email"));
-				usuario.setSenha(r.getString("senha"));
-				usuario.setTelefone(r.getString("telefone"));
+				Usuario  user = new Usuario();
+				user.setId(r.getInt("id"));
+				user.setNome(r.getString("nome"));
+				user.setCpf(r.getString("cpf"));
+				user.setEmail(r.getString("email"));
+				user.setSenha(r.getString("senha"));
+				user.setTelefone(r.getString("telefone"));
+				
+				return user;
 			}
 
 		} catch (Exception e) {
