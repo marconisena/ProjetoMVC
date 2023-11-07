@@ -31,7 +31,7 @@ public class UpdateController extends HttpServlet {
 			UsuarioDAO uDAO = new UsuarioDAO();
 			Usuario usuario = uDAO.findUsuario(id);
 			
-			req.setAttribute("usuarios", usuario);
+			req.setAttribute("usuario", usuario);
 			
 			RequestDispatcher rd = req.getRequestDispatcher("atualizar.jsp");
 			rd.forward(req, res);

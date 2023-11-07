@@ -31,8 +31,8 @@ public class CreateContoller extends HttpServlet {
 		
 		
 		try {
-			UsuarioDAO cDAO = new UsuarioDAO();
-			cDAO.createClient(usuario);
+			UsuarioDAO uDAO = new UsuarioDAO();
+			uDAO.createUsuariot(usuario);
 			
 			res.sendRedirect("ReadController");
 		} catch (SQLException e) {

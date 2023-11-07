@@ -31,7 +31,7 @@ public class UsuarioDAO{
 		}
 	}
 
-	public void createClient(Usuario usuario) {
+	public void createUsuariot(Usuario usuario) {
 		sql = "INSERT INTO usuario (nome,cpf,email,senha,telefone) VALUES (?,?,?,?,?)";
 
 		try (PreparedStatement stmt = connection.prepareStatement(sql)) {
