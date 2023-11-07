@@ -3,6 +3,6 @@ Id_Usuario int not null auto_increment primary key,
 Nome VARCHAR(200),
 Cpf VARCHAR(12),
 Email VARCHAR(100),
-Senha VARCHAR(12),
+Senha VARCHAR(20),
 Telefone VARCHAR(20)
 )
